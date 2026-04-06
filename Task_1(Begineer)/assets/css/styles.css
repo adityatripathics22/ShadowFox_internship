@@ -135,9 +135,58 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: box-shadow .4s;
 
+}
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .4s;
+
+}
+
+.nav__logo:hover {
+  color: var(--first-color);
+} 
+
+
+.nav__toggle,
+.nav__close{
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 
 /* Navigation for mobile devices */
+@media screen and (max-width: 1150px) {
+  .nav__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.5);
+    padding-block: 5rem 4rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+    transition: top .4s;
+
+  }
+  
+}
 
 
 /* Show menu */
