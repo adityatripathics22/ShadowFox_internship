@@ -175,7 +175,7 @@ img {
 @media screen and (max-width: 1150px) {
   .nav__menu{
     position: fixed;
-    top: 0;
+    top: -120%;
     left: 0;
     width: 100%;
     background-color: var(--body-color);
@@ -188,8 +188,47 @@ img {
   
 }
 
+.nav__list{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  
+}
 
+.nav__link{
+  position: relative;
+  color: var(--white--color);
+  font-weight: var(--font-medium);
+  transition: color .4s, width .4s;
+
+  .nav__link::after{
+    content: '';
+    width: 60%;
+    height: 2px;
+    background-color: var(--first-color);
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    transition: width .4s;
+  }
+}
+
+.nav__link:hover{
+  color: var(--first-color);
+}
+
+.nav__link:hover::after{
+  width: 60%;
+}
+
+.nav__close{
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+}
 /* Show menu */
+
 
 
 /* Add shadow header */
