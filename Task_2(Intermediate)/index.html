@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A fan-first Chennai Super Kings website with squad details, fixtures, stats, news, and interactive matchday features."
+    />
+    <title>Whistle Podu Central | Chennai Super Kings Fan Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="site-nav">
+          <a class="brand" href="#top">
+            <span class="brand-mark">CSK</span>
+            <span class="brand-copy">
+              <strong>Whistle Podu Central</strong>
+              <small>Chennai Super Kings Fan Hub</small>
+            </span>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+            Menu
+          </button>
+          <div class="nav-links" id="nav-links">
+            <a href="#story">Story</a>
+            <a href="#squad">Squad</a>
+            <a href="#fixtures">Fixtures</a>
+            <a href="#stats">Stats</a>
+            <a href="#fan-zone">Fan Zone</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">IPL Team Website Development</p>
+            <h1>Celebrate the roar, legacy, and matchday energy of Chennai Super Kings.</h1>
+            <p class="hero-text">
+              This fan-first experience brings together the squad, key fixtures, team numbers, breaking
+              stories, and interactive features in one bold home base built for both desktop and mobile supporters.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#fixtures">View Fixtures</a>
+              <a class="button button-secondary" href="#fan-zone">Join Fan Zone</a>
+            </div>
+          </div>
+
+          <aside class="match-card">
+            <div class="match-pill">Next Big Clash</div>
+            <h2>CSK vs MI</h2>
+            <p class="match-meta">Saturday, 7:30 PM IST</p>
+            <p class="match-meta">M. A. Chidambaram Stadium, Chennai</p>
+            <div class="countdown" aria-label="Match countdown">
+              <div><span id="days">00</span><small>Days</small></div>
+              <div><span id="hours">00</span><small>Hours</small></div>
+              <div><span id="minutes">00</span><small>Minutes</small></div>
+            </div>
+            <p class="match-blurb">
+              Expect a packed yellow sea, high-pressure death overs, and a classic rivalry under the lights.
+            </p>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section story-section" id="story">
+          <div class="section-heading">
+            <p class="eyebrow">Team Story</p>
+            <h2>A franchise built on calm leadership, loyal support, and unforgettable nights.</h2>
+          </div>
+          <div class="story-grid">
+            <article class="story-panel">
+              <h3>Identity</h3>
+              <p>
+                Chennai Super Kings are known for tactical clarity, experienced stars, and the unmatched pulse of
+                Chepauk. The yellow jersey has become a symbol of belief, resilience, and big-match composure.
+              </p>
+            </article>
+            <article class="story-panel">
+              <h3>Fan Culture</h3>
+              <p>
+                From the first whistle to the final over, the Whistle Podu spirit turns every game into a shared
+                celebration. The community stretches from Chennai to supporters across the world.
+              </p>
+            </article>
+            <article class="story-panel">
+              <h3>What This Site Offers</h3>
+              <p>
+                Explore curated squad profiles, featured fixtures, quick-glance team stats, matchday news, and fan
+                engagement tools crafted to feel lively, clear, and easy to navigate.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section squad-section" id="squad">
+          <div class="section-heading inline-heading">
+            <div>
+              <p class="eyebrow">Player Profiles</p>
+              <h2>Featured squad voices</h2>
+            </div>
+            <div class="filter-group" role="tablist" aria-label="Squad filters">
+              <button class="filter-button active" data-filter="all" type="button">All</button>
+              <button class="filter-button" data-filter="batter" type="button">Batters</button>
+              <button class="filter-button" data-filter="all-rounder" type="button">All-Rounders</button>
+              <button class="filter-button" data-filter="bowler" type="button">Bowlers</button>
+            </div>
+          </div>
+
+          <div class="player-grid">
+            <article class="player-card" data-role="batter">
+              <span class="player-role">Batter</span>
+              <h3>Ruturaj Gaikwad</h3>
+              <p class="player-bio">
+                Elegant top-order anchor who sets the tone with timing, placement, and calm decision-making.
+              </p>
+              <ul>
+                <li>Signature: Controlled powerplay batting</li>
+                <li>Strength: Pace manipulation</li>
+              </ul>
+            </article>
+            <article class="player-card" data-role="all-rounder">
+              <span class="player-role">All-Rounder</span>
+              <h3>Ravindra Jadeja</h3>
+              <p class="player-bio">
+                Three-dimensional impact player who changes games with electric fielding, smart spin, and fearless finishing.
+              </p>
+              <ul>
+                <li>Signature: Squeeze through middle overs</li>
+                <li>Strength: Pressure moments</li>
+              </ul>
+            </article>
+            <article class="player-card" data-role="bowler">
+              <span class="player-role">Bowler</span>
+              <h3>Matheesha Pathirana</h3>
+              <p class="player-bio">
+                Slinging pace option trusted at the death for yorkers, awkward angles, and wicket-taking bursts.
+              </p>
+              <ul>
+                <li>Signature: Death-over execution</li>
+                <li>Strength: Yorker variation</li>
+              </ul>
+            </article>
+            <article class="player-card" data-role="all-rounder">
+              <span class="player-role">All-Rounder</span>
+              <h3>Shivam Dube</h3>
+              <p class="player-bio">
+                Powerful middle-order hitter who attacks spin early and lifts the scoring rate in decisive phases.
+              </p>
+              <ul>
+                <li>Signature: Boundary bursts in middle overs</li>
+                <li>Strength: Clean leg-side striking</li>
+              </ul>
+            </article>
+            <article class="player-card" data-role="bowler">
+              <span class="player-role">Bowler</span>
+              <h3>Deepak Chahar</h3>
+              <p class="player-bio">
+                Swing specialist who shapes the new ball, creates early breakthroughs, and sets strategic fields.
+              </p>
+              <ul>
+                <li>Signature: Powerplay movement</li>
+                <li>Strength: Tactical setup</li>
+              </ul>
+            </article>
+            <article class="player-card" data-role="batter">
+              <span class="player-role">Batter</span>
+              <h3>Devon Conway</h3>
+              <p class="player-bio">
+                Left-handed accumulator who balances stability with tempo and builds strong opening partnerships.
+              </p>
+              <ul>
+                <li>Signature: Chase control</li>
+                <li>Strength: Gap finding</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section fixtures-section" id="fixtures">
+          <div class="section-heading">
+            <p class="eyebrow">Match Schedule</p>
+            <h2>Upcoming fixtures at a glance</h2>
+          </div>
+          <div class="fixtures-table" role="table" aria-label="Upcoming fixtures">
+            <div class="fixture-row fixture-head" role="row">
+              <span>Match</span>
+              <span>Date</span>
+              <span>Venue</span>
+              <span>Status</span>
+            </div>
+            <div class="fixture-row" role="row">
+              <span>CSK vs MI</span>
+              <span>May 3</span>
+              <span>Chennai</span>
+              <span><strong>Home</strong></span>
+            </div>
+            <div class="fixture-row" role="row">
+              <span>KKR vs CSK</span>
+              <span>May 7</span>
+              <span>Kolkata</span>
+              <span>Away</span>
+            </div>
+            <div class="fixture-row" role="row">
+              <span>CSK vs RR</span>
+              <span>May 11</span>
+              <span>Chennai</span>
+              <span><strong>Home</strong></span>
+            </div>
+            <div class="fixture-row" role="row">
+              <span>RCB vs CSK</span>
+              <span>May 16</span>
+              <span>Bengaluru</span>
+              <span>Away</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section stats-section" id="stats">
+          <div class="section-heading">
+            <p class="eyebrow">Team Statistics</p>
+            <h2>Quick numbers that define the campaign spirit</h2>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <span class="stat-value">5</span>
+              <span class="stat-label">IPL titles</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-value">148+</span>
+              <span class="stat-label">Average powerplay strike rate target</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-value">7.4</span>
+              <span class="stat-label">Middle-over economy benchmark</span>
+            </article>
+            <article class="stat-card">
+              <span class="stat-value">92%</span>
+              <span class="stat-label">Fan poll confidence for home wins</span>
+            </article>
+          </div>
+        </section>
+
+        <section class="section news-section">
+          <div class="section-heading">
+            <p class="eyebrow">News Updates</p>
+            <h2>What fans are talking about right now</h2>
+          </div>
+          <div class="news-grid">
+            <article class="news-card">
+              <p class="news-tag">Training Ground</p>
+              <h3>Top-order combinations sharpened in extended net session at Chepauk.</h3>
+              <p>
+                Coaches focused on situational batting drills, especially against spin-heavy middle overs and
+                late-innings acceleration plans.
+              </p>
+            </article>
+            <article class="news-card">
+              <p class="news-tag">Matchday Buzz</p>
+              <h3>Yellow wave expected as supporters prepare a full-stadium card display.</h3>
+              <p>
+                Fan clubs are coordinating chants, banners, and seat mosaics to turn the next home game into a
+                high-energy fortress.
+              </p>
+            </article>
+            <article class="news-card">
+              <p class="news-tag">Analysis</p>
+              <h3>Death-over bowling plans show stronger control with clearer field patterns.</h3>
+              <p>
+                The team’s recent tactical setup has emphasized yorker lanes, slower-ball disguise, and boundary
+                rider precision.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section fan-zone-section" id="fan-zone">
+          <div class="section-heading">
+            <p class="eyebrow">Fan Engagement</p>
+            <h2>Make the experience interactive</h2>
+          </div>
+          <div class="fan-zone-grid">
+            <article class="fan-card poll-card">
+              <h3>Fan Poll</h3>
+              <p>Who should be the impact player in the next match?</p>
+              <form id="poll-form">
+                <label><input type="radio" name="impact-player" value="Shivam Dube" /> Shivam Dube</label>
+                <label><input type="radio" name="impact-player" value="Ravindra Jadeja" /> Ravindra Jadeja</label>
+                <label><input type="radio" name="impact-player" value="Matheesha Pathirana" /> Matheesha Pathirana</label>
+                <button class="button button-primary" type="submit">Cast Vote</button>
+              </form>
+              <p class="poll-result" id="poll-result" aria-live="polite"></p>
+            </article>
+
+            <article class="fan-card">
+              <h3>Supporter Feed</h3>
+              <p>
+                Build social media integration here for match hashtags, fan photos, and reactions from each innings
+                break.
+              </p>
+              <div class="social-chips">
+                <span>#WhistlePodu</span>
+                <span>#Yellove</span>
+                <span>#CSK</span>
+              </div>
+            </article>
+
+            <article class="fan-card">
+              <h3>Live Match Updates</h3>
+              <ul class="live-feed">
+                <li>Powerplay watch: aggressive fielding ring, strong new-ball discipline.</li>
+                <li>Middle overs: spin choke phase activated with attacking catchers.</li>
+                <li>Death overs: yorker-heavy finish and boundary-protection setup.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built as an immersive IPL team website concept focused on design, organization, and fan engagement.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
