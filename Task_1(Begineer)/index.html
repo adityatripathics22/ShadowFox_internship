@@ -1,113 +1,356 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta
+      name="description"
+      content="Aditya's personal portfolio showcasing skills, projects, resume highlights, and contact information."
+   >
 
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
 
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <title>Aditya | Portfolio</title>
+</head>
+<body>
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#home" class="nav__logo">Aditya</a>
 
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="#home" class="nav__link active-link">Home</a></li>
+               <li><a href="#about" class="nav__link">About</a></li>
+               <li><a href="#skills" class="nav__link">Skills</a></li>
+               <li><a href="#projects" class="nav__link">Projects</a></li>
+               <li><a href="#resume" class="nav__link">Resume</a></li>
+               <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
 
-      <title>Aditya portfolio</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">Adi</a>
+            <button class="nav__close" id="nav-close" aria-label="Close navigation menu">
+               <i class="ri-close-large-line"></i>
+            </button>
+         </div>
 
-            <div class="nav__menu" id="nav__menu">
-               <ul class="nav__list">
-                  <li>
-                     <a href="#home" class="nav__link">Home</a>
-                     
-                  </li>
+         <button class="nav__toggle" id="nav-toggle" aria-label="Open navigation menu">
+            <i class="ri-menu-line"></i>
+         </button>
+      </nav>
+   </header>
 
-                  <li>
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
+   <main class="main">
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__content">
+               <p class="home__subtitle">Beginner Web Developer</p>
+               <h1 class="home__title">
+                  Hi, I'm <span>Aditya</span><br>
+                  I build <span class="home__typed"></span>
+               </h1>
+               <p class="home__description">
+                  I am learning to create clean, responsive websites that present ideas clearly and feel polished across devices.
+                  This portfolio highlights my skills, projects, and the progress I am making as a front-end developer.
+               </p>
 
-                  <li>
-                     <a href="#projects" class="nav__link">Projects</a>
-                  </li>
-
-                  <li>
-                     <a href="#resume" class="nav__link">Resume</a>
-                  </li>
-
-                  <li>
-                     <a href="#contact" class="nav__link">Contact</a>
-                  </li>
-
-               </ul>
-
-               <div class="nav__close" id="nav__close">
-                  <i class="ri-close-large-line"></i>
-
-
+               <div class="home__actions">
+                  <a href="#projects" class="button">View Projects</a>
+                  <a href="assets/pdf/Aditya_Resume.pdf" class="button button--ghost" target="_blank" rel="noopener noreferrer">Download Resume</a>
                </div>
 
+               <div class="home__info grid">
+                  <article class="home__card">
+                     <h2>6+</h2>
+                     <p>Practice projects completed</p>
+                  </article>
+                  <article class="home__card">
+                     <h2>HTML</h2>
+                     <p>Semantic, accessible structure</p>
+                  </article>
+                  <article class="home__card">
+                     <h2>CSS</h2>
+                     <p>Responsive layouts and styling</p>
+                  </article>
+               </div>
             </div>
 
-            <div class="nav__toggle" id="nav__toggle">
-               <i class="ri-menu-line"></i>
-
+            <div class="home__image-wrapper">
+               <div class="home__blob"></div>
+               <img src="assets/img/Confident portrait of a South Asian man.png" alt="Portrait of Aditya" class="home__image">
             </div>
-         </nav>
-         
-      </header>
+         </div>
+      </section>
 
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            
-         </section>
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__image-wrapper">
+               <img src="assets/img/Confident portrait of a South Asian man.png" alt="Aditya working on a laptop" class="about__image">
+            </div>
 
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            
-         </section>
+            <div class="about__content">
+               <p class="section__subtitle">About Me</p>
+               <h2 class="section__title section__title--left">Turning practice into real projects</h2>
+               <p class="about__description">
+                  I enjoy building personal web projects that help me improve my HTML, CSS, and JavaScript skills.
+                  My current focus is writing cleaner code, improving responsive layouts, and creating interfaces that feel simple and useful.
+               </p>
 
-         <!--==================== PROJECTS ====================-->
-         <section class="projects section" id="projects">
-            
-         </section>
+               <div class="about__grid">
+                  <article class="about__item">
+                     <i class="ri-code-s-slash-line"></i>
+                     <div>
+                        <h3>Front-End Basics</h3>
+                        <p>Semantic HTML, reusable sections, and responsive CSS.</p>
+                     </div>
+                  </article>
+                  <article class="about__item">
+                     <i class="ri-layout-4-line"></i>
+                     <div>
+                        <h3>Responsive Design</h3>
+                        <p>Layouts that adapt smoothly to phones, tablets, and desktops.</p>
+                     </div>
+                  </article>
+                  <article class="about__item">
+                     <i class="ri-lightbulb-flash-line"></i>
+                     <div>
+                        <h3>Continuous Learning</h3>
+                        <p>Each new project helps me practice cleaner code and better UI decisions.</p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
 
-         <!--==================== RESUME ====================-->
-         <section class="resume section" id="resume">
-            
-         </section>
+      <section class="skills section" id="skills">
+         <div class="container">
+            <p class="section__subtitle">Core Skills</p>
+            <h2 class="section__title">Tools I use while learning</h2>
 
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            
-         </section>
-      </main>
+            <div class="skills__container grid">
+               <article class="skills__card">
+                  <h3>HTML5</h3>
+                  <p>Creating semantic page structure, navigation, forms, and content sections.</p>
+               </article>
+               <article class="skills__card">
+                  <h3>CSS3</h3>
+                  <p>Building layouts with Grid and Flexbox, styling components, and adding responsive breakpoints.</p>
+               </article>
+               <article class="skills__card">
+                  <h3>JavaScript</h3>
+                  <p>Adding simple interactivity like menus, scrolling effects, active links, and UI behavior.</p>
+               </article>
+               <article class="skills__card">
+                  <h3>Git & GitHub</h3>
+                  <p>Managing project files, saving versions, and sharing code as I continue to improve.</p>
+               </article>
+            </div>
+         </div>
+      </section>
 
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         
-      </footer>
+      <section class="projects section" id="projects">
+         <div class="container">
+            <p class="section__subtitle">Portfolio</p>
+            <h2 class="section__title">Featured Projects</h2>
 
-      <!--========== SCROLL UP ==========-->
-      
+            <div class="projects__container grid">
+               <article class="projects__card">
+                  <img src="assets/img/project-1.png" alt="Landing page project preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">HTML & CSS</span>
+                     <h3>Landing Page Design</h3>
+                     <p>A clean landing page focused on typography, spacing, and clear call-to-action sections.</p>
+                  </div>
+               </article>
 
-      <!--=============== SCROLLREVEAL ===============-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+               <article class="projects__card">
+                  <img src="assets/img/project-2.png" alt="Portfolio mockup preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">Responsive UI</span>
+                     <h3>Personal Portfolio Layout</h3>
+                     <p>A practice portfolio exploring structured sections, card layouts, and mobile-first design.</p>
+                  </div>
+               </article>
 
-      <!--=============== TYPED JS ===============-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+               <article class="projects__card">
+                  <img src="assets/img/project-3.png" alt="Dashboard interface preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">CSS Grid</span>
+                     <h3>Dashboard Concept</h3>
+                     <p>A responsive dashboard interface built to practice alignment, spacing, and content grouping.</p>
+                  </div>
+               </article>
 
-      <!--=============== EMAIL JS ===============-->
-      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+               <article class="projects__card">
+                  <img src="assets/img/project-4.png" alt="Service website preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">Web Design</span>
+                     <h3>Service Website</h3>
+                     <p>A business-style website with hero content, features, and a polished multi-section layout.</p>
+                  </div>
+               </article>
 
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-   </body>
+               <article class="projects__card">
+                  <img src="assets/img/project-5.png" alt="Creative website preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">Creative Build</span>
+                     <h3>Creative Showcase</h3>
+                     <p>An experimental design focused on visual hierarchy, color contrast, and layout variety.</p>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/project-6.png" alt="Responsive product page preview" class="projects__image">
+                  <div class="projects__content">
+                     <span class="projects__tag">Practice Project</span>
+                     <h3>Product Page</h3>
+                     <p>A product-focused layout demonstrating cards, sections, and responsive content presentation.</p>
+                  </div>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="resume section" id="resume">
+         <div class="container">
+            <p class="section__subtitle">Resume</p>
+            <h2 class="section__title">Learning path and highlights</h2>
+
+            <div class="resume__container grid">
+               <article class="resume__panel">
+                  <h3>What I am building</h3>
+                  <div class="resume__timeline">
+                     <div class="resume__item">
+                        <span class="resume__dot"></span>
+                        <div>
+                           <h4>Personal Portfolio</h4>
+                           <p>Designed and developed a responsive portfolio website using HTML, CSS, and JavaScript.</p>
+                        </div>
+                     </div>
+                     <div class="resume__item">
+                        <span class="resume__dot"></span>
+                        <div>
+                           <h4>Responsive Practice Projects</h4>
+                           <p>Built multiple layout-focused pages to improve understanding of Grid, Flexbox, and spacing systems.</p>
+                        </div>
+                     </div>
+                     <div class="resume__item">
+                        <span class="resume__dot"></span>
+                        <div>
+                           <h4>Interactive UI Basics</h4>
+                           <p>Added navigation menus, reveal animations, active section tracking, and smooth scrolling behavior.</p>
+                        </div>
+                     </div>
+                  </div>
+               </article>
+
+               <article class="resume__panel">
+                  <h3>Quick Summary</h3>
+                  <ul class="resume__list">
+                     <li>Focused on front-end development fundamentals.</li>
+                     <li>Comfortable creating static websites with responsive layouts.</li>
+                     <li>Practicing JavaScript to add user-friendly interactivity.</li>
+                     <li>Interested in building more polished portfolio and business websites.</li>
+                  </ul>
+
+                  <a href="assets/pdf/Aditya_Resume.pdf" class="button resume__button" target="_blank" rel="noopener noreferrer">
+                     Open Full Resume
+                  </a>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="contact section" id="contact">
+         <div class="container">
+            <p class="section__subtitle">Contact</p>
+            <h2 class="section__title">Let's connect</h2>
+
+            <div class="contact__container grid">
+               <div class="contact__content">
+                  <p class="contact__description">
+                     I'm open to internships, beginner-friendly opportunities, and collaborations where I can keep learning and contribute.
+                  </p>
+
+                  <div class="contact__cards">
+                     <article class="contact__card">
+                        <i class="ri-mail-line"></i>
+                        <div>
+                           <h3>Email</h3>
+                           <a href="mailto:aditya@example.com">adityatripathics22@gmail.com</a>
+                        </div>
+                     </article>
+                     <article class="contact__card">
+                        <i class="ri-phone-line"></i>
+                        <div>
+                           <h3>Phone</h3>
+                           <a href="tel:+910000000000">+91 88589 15458</a>
+                        </div>
+                     </article>
+                     <article class="contact__card">
+                        <i class="ri-map-pin-line"></i>
+                        <div>
+                           <h3>Location</h3>
+                           <p>India</p>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+
+               <form class="contact__form" id="contact-form">
+                  <div class="contact__group">
+                     <label for="name">Your Name</label>
+                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                  </div>
+
+                  <div class="contact__group">
+                     <label for="email">Your Email</label>
+                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                  </div>
+
+                  <div class="contact__group">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity" required></textarea>
+                  </div>
+
+                  <button type="submit" class="button">Send Message</button>
+                  <p class="contact__message" id="contact-message" aria-live="polite"></p>
+               </form>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer">
+      <div class="footer__container container">
+         <div>
+            <h2 class="footer__logo">Aditya</h2>
+            <p class="footer__text">Learning front-end development one project at a time.</p>
+         </div>
+
+         <div class="footer__social">
+            <a href="https://www.linkedin.com/in/aditya-tripathi-cs22/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+               <i class="ri-github-line"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aditya-tripathi-cs22/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+               <i class="ri-linkedin-box-line"></i>
+            </a>
+            <a href="mailto:adityatripathics22@gmail.com" aria-label="Email">
+               <i class="ri-mail-send-line"></i>
+            </a>
+         </div>
+      </div>
+
+      <span class="footer__copy">&#169; 2026 Aditya. Built with HTML, CSS, and JavaScript.</span>
+   </footer>
+
+   <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line"></i>
+   </a>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
 </html>
